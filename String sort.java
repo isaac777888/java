@@ -3,7 +3,7 @@ import java.util.Arrays;
 public class StringSort {
 
 	public static void main(String[] args) {
-		String[] s= {"PRAVIN","SATHISH","NANDHA"};
+		String[] s= {"Isaac","SATHISH","NANDHA"};
 		System.out.println("Before sorting: "+Arrays.toString(s));
 		for(int i=0;i<s.length;i++) {
 			for(int j=i+1;j<s.length;j++) {
