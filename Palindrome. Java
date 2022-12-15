@@ -1,25 +1,22 @@
-import java.util.Scanner;
-public class Palindrome{
-static void m(int n){
-	int rem,sum=0;
-	int temp=n;
-	while(n>0){
-		rem=n%10;
-		sum=(sum*10)+rem;
-		n=n/10;
-	}
-	if(temp==sum){
-		System.out.println(sum+"Its Palindrome number");
-	}
-	else{
-		System.out.println(sum+"Its not a Palindrome number");
-	}
-}
+import java.util.*;
 
-public static void main(String[] args){
-Scanner input=new Scanner(System.in);
-System.out.println("Enter the number:");
-int number=input.nextInt();
-m(number);
-}
-}
+public class StringPalindrome {
+
+	public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		System.out.println("Enter the string: ");
+		String s=input.nextLine();
+		String temp="";
+		int l=s.length();
+		for(int i=l-1;i>=0;i--) {
+			System.out.print(s.charAt(i));
+			temp=temp+s.charAt(i);
+		}
+		System.out.println();
+		if(s.equals(temp)) {
+			System.out.println("Its palindrome");
+		}
+		else {
+			System.out.println("Its  not palindrome");
+		}
+	}
