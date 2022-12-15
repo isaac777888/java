@@ -1,4 +1,3 @@
-# java
 package javaPrograms;
 
 import java.util.Scanner;
@@ -27,3 +26,5 @@ public class FibonacciSeries {
 		print(num);
 
 	}
+
+}
